@@ -1,0 +1,112 @@
+{
+	"customTemplates": [],
+	"patterns": [],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#FAFAF0",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#002829",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#FD6F48",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#00A4A6",
+					"name": "secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#FDD655",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "984px",
+			"wideSize": "1240px"
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"AR One Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ar-one-sans/ar-one-sans-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"AR One Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/ar-one-sans/ar-one-sans-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"AR One Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/ar-one-sans/ar-one-sans-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"AR One Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/ar-one-sans/ar-one-sans-600-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"AR One Sans\", sans-serif",
+					"name": "AR One Sans",
+					"slug": "ar-one-sans"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Bigshot One\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/bigshot-one/bigshot-one-400-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Bigshot One\", system-ui",
+					"name": "Bigshot One",
+					"slug": "bigshot-one"
+				}
+			]
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "footer"
+		}
+	],
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
+}
