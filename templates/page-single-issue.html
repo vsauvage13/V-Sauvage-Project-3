@@ -1,11 +1,23 @@
-<!-- wp:template-part {"slug":"header","area":"header"} /-->
+<!-- wp:template-part {"slug":"header","area":"header","theme":"myblocktheme"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|80","left":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--80)"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group"><!-- wp:template-part {"slug":"hero-article","area":"uncategorized"} /-->
-
-<!-- wp:template-part {"slug":"cta-b-lock","area":"uncategorized"} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer","area":"footer"} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|80","left":"var:preset|spacing|80","top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--80)">
+  
+    <!-- Existing Group: Hero Article and Call-to-Action -->
+    <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group">
+      <!-- wp:template-part {"slug":"hero-article","area":"uncategorized","theme":"myblocktheme"} /-->
+      <!-- wp:template-part {"slug":"cta-b-lock","area":"uncategorized","theme":"myblocktheme"} /-->
+    </div>
+    <!-- /wp:group -->
+  
+    <!-- New Group: Display Custom Issue Details using the Shortcode -->
+    <!-- wp:shortcode -->
+    [issue_details]
+    <!-- /wp:shortcode -->
+    
+  </div>
+  <!-- /wp:group -->
+  
+  <!-- wp:template-part {"slug":"footer","area":"footer","theme":"myblocktheme"} /-->
+  
