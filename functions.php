@@ -9,6 +9,16 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
+/**
+ * Project 3 Issues CPT Plugin
+ *
+ * This is my hand-coded plugin that registers the "Issues" custom post type 
+ * for the Project 3 website, as required by the assignment.
+ *
+ * Author: Vienna May Sauvage
+ * Version: 1.0
+ */
+
 /* Register Custom Post Type: Issues */
 function ws_register_issues_cpt() {
 
@@ -81,3 +91,4 @@ function ws_issue_details_shortcode() {
     return ob_get_clean();
 }
 add_shortcode( 'issue_details', 'ws_issue_details_shortcode' );
+
