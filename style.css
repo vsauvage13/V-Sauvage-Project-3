@@ -5,4 +5,64 @@ Description: My DGL233 Project 3 block theme
 Version: 1.0
 */
 
+/* BONUS WORK _STYLING */
 
+/* Sticky Header */
+header.wp-block-template-part {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the header stays on top */
+  background-color: var(--wp--preset--color--contrast);
+  /*box-shadow for separation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply Transition to All Links */
+a {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+a:hover {
+  color: #fd6f48;
+  transform: scale(1.02);
+}
+
+.wp-block-post-title a:hover {
+  color: #002829;
+}
+
+/* Logo Animation on Hover */
+.custom-logo-link img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-logo-link img:hover {
+  transform: scale(1.05); /* Slightly enlarge the log
+    o on hover */
+}
+/* Updated nav menu hover effect */
+.wp-block-navigation-item__content:hover,
+.wp-block-navigation-item__content:hover span {
+  color: #fd6f48 !important;
+  transition: color 0.3s ease;
+}
+
+/* Style for the Contact Form 7 submit button */
+input.wpcf7-form-control.wpcf7-submit {
+  background-color: var(--wp--preset--color--tertiary) !important;
+  border: 0 !important;
+  color: var(--wp--preset--color--contrast) !important;
+  font-family: var(--wp--preset--font-family--ar-one-sans) !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px) !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  border-radius: 35px !important;
+  transition: color 0.3s ease, transform 0.3s ease !important;
+}
+
+/* Hover state: Change text color, keep background same, and add a slight scale effect */
+input.wpcf7-form-control.wpcf7-submit:hover {
+  color: #fd6f48 !important;
+  transform: scale(1.02) !important;
+}
