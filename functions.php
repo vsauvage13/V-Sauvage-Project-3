@@ -91,4 +91,3 @@ function ws_issue_details_shortcode() {
     return ob_get_clean();
 }
 add_shortcode( 'issue_details', 'ws_issue_details_shortcode' );
-
